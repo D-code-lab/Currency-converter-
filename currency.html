@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+ <script src="currency.js" defer></script>
+</head>
+<body>
+
+    <div class="converter">
+
+        <h2>💵Currency Converter💴</h2>
+        <p>Convert your money easily</p>
+
+        <div class="form">
+
+            <div class="form-control">
+                <label>Enter Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+
+            <div class="form-control">
+                <label>From</label>
+                <select id="fromCurrency">
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="NGN">NGN - Nigerian Naira</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label>To</label>
+                <select id="toCurrency">
+                    <option value="NGN">NGN - Nigerian Naira</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                </select>
+            </div>
+
+            <button id="convertBtn">Convert</button>
+
+            <h3 id="result">Converted Amount: 0</h3>
+
+        </div>
+    </div>
+
+</body>
+</html>
